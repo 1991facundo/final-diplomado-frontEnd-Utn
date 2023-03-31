@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+    background-color: #F8F9FA !important;
+}
+
+/* NavBar relleno hover */
+
+#navbarSupportedContent ul li .nav-link {
+    position: relative;
+    z-index: 1;
+    transition: color 0.2s;
+}
+
+#navbarSupportedContent ul li .nav-link:hover {
+    color: transparent;
+    background-image: linear-gradient(to bottom, #0099FF, #0099FF);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+
+/* SLIDER IMGS */
+
+.carousel-item img {
+    max-height: 28rem;
+}
+
+/* Efecto neon tarjetas */
+
+.card {
+    border: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px #0099FF, 0 16px 32px rgba(0, 0, 0, .3);
+    transform: translateY(-2px);
+}
+
+.card:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* Mapa */
+
+.mapa {
+    overflow: hidden;
+}
+
+/* Typewriter efecto*/
+
+#typewriter {
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+/* Acerca de nosotros */
+
+#numerosLocal div {
+    padding: 0 20px 0 0;
+    height: 48px;
+}
+
+#numerosLocal div:not(:last-child) {
+    border-right: 2px solid darkgrey;
+}
+
+#numerosLocal div:not(:first-child) {
+    padding-left: 20px;
+}
+
+#numerosLocal p {
+    margin: 0;
+}
+
+/* Contacto */
+
+#seccionContacto {
+    background-color: #0099FF;
+}
+
+/* Formulario */
+
+.form-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.floating-label {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    padding: 0.5rem 0.5rem 0.25rem;
+    transition: all 0.3s;
+}
+
+.floating-label:focus {
+    border-bottom: 2px solid #0069D9;
+}
+
+.floating-label:focus+label,
+.floating-label:not(:placeholder-shown)+label {
+    transform: translateY(-100%);
+    font-size: 0.8rem;
+    color: #0069D9;
+}
+
+/* Footer */
+
+footer {
+    min-height: 100px;
+    background-color: #0099FF;
+}
+
+footer p {
+    color: aliceblue;
+    text-align: center;
+}
+
+#iconos i {
+    font-size: 26px;
+    padding: 0 8px;
+    color: aliceblue;
+
+}
